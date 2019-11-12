@@ -1,0 +1,39 @@
+<% include partials/header %>
+
+<div class="container">
+  <main>
+    <a href="/connections" class = "button">BACK</a>
+    <div class="groupheads">
+      <h1><%= data.connectionName %></h1>
+      <div class="buttons">
+        <p>Are you going?</p>
+        <%if(userprofile){%>
+        <a href="/connections/connection/<%=data.connectionID%>/save/Yes" class = "button">Yes</a>
+        <a href="/connections/connection/<%=data.connectionID%>/save/No" class = "button">No</a>
+        <a href="/connections/connection/<%=data.connectionID%>/save/Maybe" class = "button">Maybe</a>
+        <%}%>
+        <%if(!userprofile){%>
+          <a href="#" class = "button">Yes</a>
+          <a href="#" class = "button">No</a>
+          <a href="#" class = "button">Maybe</a>
+          <%}%>
+      </div>
+    </div>
+    <div class="subheads">
+      <img src="<%=data.imgUrl%>" alt="axe">
+      <div class="content">
+        <p>hosted by: <%=data.hostName%></p>
+        <p><%=data.startTime%></p>
+        <p><%=data.endTime%></p>
+        <p><%=data.location%></p>
+      </div>
+    </div>
+    <h2>Details</h2>
+    <hr>
+    <p><%=data.description%></p>
+    <h2>Attendies:3</h2>
+    <hr>
+  </main>
+</div>
+
+<% include partials/footer %>

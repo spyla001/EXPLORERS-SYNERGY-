@@ -1,0 +1,46 @@
+<% include partials/header %>
+<div class="container">
+    <main id="form">
+    <div class="form-container">
+    <h1 id="title">Want to start a new connection?</h1>
+    <p id="description">please provide us the following details......</p>
+    <br>
+      <form  id = "survey-form">
+      <div class="row">
+        <div class="column1">
+          <label for="connection">Connection type:</label>
+        </div>
+        <div class="column2"><input type="text" id="connection" name = "connectiontype" placeholder = "Type of meetup" required></div>
+      </div>
+      <div class="row">
+        <div class="column1">
+          <label for="location">Where?:</label>
+        </div>
+        <div class="column2"><input type="text" id="location" name = "location" placeholder = "enter location" required></div>
+      </div>
+      <div class="row">
+        <div class="column1">
+          <label for="startdate">Start:</label>
+        </div>
+        <div class="column2"><input type="datetime-local" id="startdate" name = "date" ></div>
+      </div>
+      <div class="row">
+        <div class="column1">
+          <label for="enddate">end:</label>
+        </div>
+        <div class="column2"><input type="datetime-local" id="enddate" name = "date" ></div>
+      </div>
+      <div class = "row">
+        <div class = "column1">
+          <label for="desc"> Desccription:</label>
+        </div>
+        <div class = "column2">
+          <textarea name="textarea" id="desc" cols="30" rows="10" placeholder = "Enter your text here..."></textarea>
+        </div>
+    </div>
+      <button type="submit" id = "submit" name="button">create connection</button>
+        </form>
+        </div>
+      </main>
+    </div>
+<% include partials/footer %>

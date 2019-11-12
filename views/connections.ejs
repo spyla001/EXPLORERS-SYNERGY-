@@ -1,0 +1,20 @@
+<%include partials/header %>
+<div class="container">
+      <main>
+          <%data.types.forEach(function(x){ %>
+        <section>
+          <header>
+              <h2><%= x.toUpperCase() %></h2>
+              <hr>
+          </header>
+          <% data.connections.forEach(function(y){ %>
+            <% if(y.connectionType == x){%>
+          <ul>
+            <li><a href="connections/connection/<%=y.connectionID%>"><%= y.connectionName%></a></li>
+          </ul>
+        <%}});%>
+        </section>
+        <%});%>
+      </main>
+    </div>
+<% include partials/footer %>

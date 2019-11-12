@@ -1,0 +1,195 @@
+body{
+  padding:0px;
+  margin:0px;
+  font-family: 'Carter One', cursive;
+  background-image: url(http://hdqwalls.com/wallpapers/polygonal-abstract-red-dark-background-eo.jpg);
+  background-position: center;
+}
+a{
+  color:white;
+  text-decoration:none;
+}
+.container-body
+{
+  background-color: #BDBDBD;
+  max-width:80%;
+  margin:0 auto;
+  border: 1px solid black;
+}
+
+
+.placeholder
+{
+  max-width:80%;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-between;
+}
+.placeholder a
+{
+  display: block;
+  color:white;
+  text-decoration:none;
+}
+#username
+{
+
+}
+
+span
+{
+  color:red;
+}
+.container-head{
+  max-width:80%;
+  margin:0 auto;
+}
+.gg
+{
+  position:fixed;
+  width:80%;
+  top:0;
+  left:10%;
+  height:110px;
+  background-color:#2C2C2C;
+  color:white;
+}
+.header
+{
+height:80px;
+display:flex;
+align-items: center;
+margin: 0 auto;
+border-bottom: 1px solid grey;
+}
+.header img{
+  height: 80px;
+  width:80px;
+}
+
+.logotxt
+{
+  padding:20px;
+  flex-grow:1;
+  flex-shrink:1;
+  font-family: 'Carter One', cursive;
+}
+
+.links
+{
+  padding:20px;
+  font-family: 'Carter One', cursive;
+}
+
+
+.links a{
+  padding:20px;
+}
+.container
+{
+  max-width:80%;
+  min-height:70vh;
+  margin:110px auto 80px auto;
+}
+nav
+{
+  position:fixed;
+  min-width:290px;
+  height:100%;
+  border-style: inset;
+  border-width: 1px;
+}
+nav ul
+{
+  list-style:none;
+}
+nav li{
+  padding:10px;
+}
+
+main{
+  padding:30px;
+  font-family:  'Carter One', cursive;
+}
+
+
+footer{
+  position:relative;
+  margin:0px;
+  bottom:0;
+  padding:5px;
+  background-color:#2C2C2C;
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div{
+  display:flex;
+  align-items: center;
+}
+.left{
+  flex-grow:1;
+  justify-content: space-around;
+}
+.middle
+{
+  flex-grow: 4;
+}
+
+.right
+{
+  flex-grow:1;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 815px)
+{
+  nav{
+    position: relative;
+    margin:0;
+    width:100%;
+    border:0px;
+  }
+  nav li
+  {
+    text-align:center;
+  }
+  .container
+  {
+    margin:0px auto;
+  }
+  main
+  {
+    text-align:center;
+    margin-left:0px;
+    position:relative;
+  }
+  .header
+  {
+    position:relative;
+    flex-direction: column;
+    height:200px;
+  }
+  .logotxt
+  {
+    flex-grow:0;
+    padding:0px;
+    margin:0px;
+  }
+  .logotxt h1
+  {
+    margin:0px;
+    padding:0px;
+  }
+}
+
+.button{
+  color:black;
+ background-color:white;
+ border:1px solid red;
+ border-radius:5px;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}

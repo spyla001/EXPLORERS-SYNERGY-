@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles/display.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/display2.css">
+    <script src="https://kit.fontawesome.com/13566fdb55.js"></script>
+    <title>MileStone2</title>
+  </head>
+  <body>
+    <div class="container-body">
+    <div class="gg">
+    <div class="header">
+      <a href="/"><img src="/images/logo.PNG" alt=""></a>
+      <div class="logotxt">
+        <h1>EXPLORER'S <span>SYNERGY</span></h1>
+      </div>
+      <div class="links">
+        <%if(userprofile){%>
+          <a href="/connections/createconnection" class ="disabled">New<span>Connection</span></a>
+          <a href="/myconnections">My<span>connections</span></a>
+          <a href="/logout">log<span>out!</span></a>
+        <%}%>
+        <%if(!userprofile){%>
+          <a href="/login" class ="disabled">New<span>Connection</span></a>
+          <a href="/login">log<span>in</span></a>
+          <a href="/logout">sign<span>up</span></a>
+        <%}%>
+      </div>
+    </div>
+    <div class="placeholder">
+      <a href="/connections" id = "connections">connections</a>
+      <%if(userprofile){%>
+      <a href="#" id = "username"> Welcome <%=user._firstName%>!</a>
+    <%}%>
+    </div>
+  </div>

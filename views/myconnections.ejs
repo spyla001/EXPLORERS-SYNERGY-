@@ -1,0 +1,25 @@
+<% include partials/header %>
+<div class="container">
+      <main>
+        <h1>Yours Connections</h1>
+        <hr>
+        <table>
+          <tr>
+            <th>group</th>
+            <th>category</th>
+            <th>your response</th>
+            <th>Update/Delete</th>
+          </tr>
+          <%data._userconnectionlist.forEach(function(x){%>
+          <tr>
+            <td><a href="#"><%=x._connectionName%></a></td>
+            <td><%=x._connectionType%></td>
+            <td><%=x._response%></td>
+            <td><a href="/connections/connection/<%=x._connectionID%>" class = "button">Update</a><a href="/myconnections/delete/<%=x._connectionID%>" class="button">Delete</a></td>
+          </tr>
+        <%})%>
+        </table>
+        <hr>
+      </main>
+    </div>
+<% include partials/footer %>
